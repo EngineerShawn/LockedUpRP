@@ -1,0 +1,24 @@
+@import url('https://use.fontawesome.com/releases/v6.5.0/css/all.css');
+
+#container {
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 800px;
+    width: 1700px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    grid-template-rows: 4rem 5rem auto 0rem; /* Adjust the values accordingly */
+}
+
+#main.spinner-visible {
+    display: flex;
+  }
+
+#main.spinner-hidden {
+  display: none;
+}

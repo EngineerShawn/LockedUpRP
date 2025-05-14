@@ -1,3 +1,5 @@
+ALTER TABLE items ADD COLUMN `limit` INT DEFAULT -1;
+
 INSERT INTO `items` (`name`, `label`, `limit`, `rare`, `can_remove`) VALUES
 	('sim_card', 'Sim Card', -1, 0, 1)
 ;

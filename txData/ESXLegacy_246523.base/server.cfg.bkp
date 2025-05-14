@@ -74,12 +74,17 @@ ensure chat
 ensure spawnmanager
 ensure hardcap
 ensure oxmysql
+ensure PolyZone
+ensure xsound
+ensure screenshot-basic
+ensure bob74_ipl
 
 # ESX Legacy Core
 # ----------
 ensure ox_lib
 ensure [core]
 ensure illenium-appearance
+ensure [smartphone]
 
 # ESX Addons
 # ----------
@@ -87,5 +92,4 @@ ensure [ox]
 ensure [standalone]
 ensure [esx_addons]
 ensure [lu-resources]
-ensure ox_doorlock
 ensure [EUP]

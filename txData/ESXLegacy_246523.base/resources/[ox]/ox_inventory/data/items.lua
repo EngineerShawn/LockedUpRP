@@ -713,4 +713,235 @@ return {
 		["combinable"] = nil,
 		["description"] = "It seems that we can fix a wet phone with this module, interesting."
 	},
+
+	-- Prison SIM Items
+
+	["metalbar"] = {
+        label = "Metal Bar",
+        weight = 100,
+        stack = true,
+        close = true,
+        description = "A Metal Bar",
+        client = {
+            image = "metalbar.png"
+        }
+    },
+    ["metalplate"] = {
+        label = "Metal Plate",
+        weight = 100,
+        stack = true,
+        close = true,
+        description = "A Metal Plate",
+        client = {
+            image = "metalplate.png"
+        }
+    },
+    ["licenseplate"] = {
+        label = "License Plate",
+        weight = 100,
+        stack = true,
+        close = true,
+        description = "A License Plate",
+        client = {
+            image = "licenseplate.png"
+        }
+    },
+    ["woodlog"] = {
+        label = "Wood Log",
+        weight = 100,
+        stack = true,
+        close = true,
+        description = "A Wood Log",
+        client = {
+            image = "woodlog.png"
+        }
+    },
+    ["woodplank"] = {
+        label = "Wood Plank",
+        weight = 100,
+        stack = true,
+        close = true,
+        description = "A Wood Plank",
+        client = {
+            image = "woodplank.png"
+        }
+    },
+    ["wooden_chair"] = {
+        label = "Wooden Chair",
+        weight = 100,
+        stack = true,
+        close = true,
+        description = "A Wooden Chair",
+        client = {
+            image = "wooden_chair.png"
+        }
+    },
+    ["wooden_table"] = {
+        label = "Wooden Table",
+        weight = 100,
+        stack = true,
+        close = true,
+        description = "A Wooden Table",
+        client = {
+            image = "wooden_table.png"
+        }
+    },
+    ["wooden_storage_box"] = {
+        label = "Wooden Storage Box",
+        weight = 100,
+        stack = true,
+        close = true,
+        description = "A Wooden Storage Box",
+        client = {
+            image = "wooden_storage_box.png"
+        }
+    },
+    ["prison_jump_suit_clean_folded"] = {
+        label = "Clean Folded Prison Jumpsuit",
+        weight = 100,
+        stack = true,
+        close = true,
+        description = "A Clean Folded Prison Jumpsuit",
+        client = {
+            image = "prison_jump_suit_clean_folded.png"
+        }
+    },
+    ["prison_jump_suit_clean"] = {
+        label = "Clean Prison Jumpsuit",
+        weight = 100,
+        stack = true,
+        close = true,
+        description = "A Clean Prison Jumpsuit",
+        client = {
+            image = "prison_jump_suit_clean.png"
+        }
+    },
+    ["prison_jump_suit_wet"] = {
+        label = "Wet Prison Jumpsuit",
+        weight = 100,
+        stack = true,
+        close = true,
+        description = "A Wet Prison Jumpsuit",
+        client = {
+            image = "prison_jump_suit_wet.png"
+        }
+    },
+    ["prison_jump_suit_dirty"] = {
+        label = "Dirty Prison Jumpsuit",
+        weight = 100,
+        stack = true,
+        close = true,
+        description = "A Dirty Prison Jumpsuit",
+        client = {
+            image = "prison_jump_suit_dirty.png"
+        }
+    },
+    ["guard_uniform_clean_folded"] = {
+        label = "Clean Folded Guard Uniform",
+        weight = 100,
+        stack = true,
+        close = true,
+        description = "A Clean Folded Guard Uniform",
+        client = {
+            image = "guard_uniform_clean_folded.png"
+        }
+    },
+    ["guard_uniform_clean"] = {
+        label = "Clean Guard Uniform",
+        weight = 100,
+        stack = true,
+        close = true,
+        description = "A Clean Guard Uniform",
+        client = {
+            image = "guard_uniform_clean.png"
+        }
+    },
+    ["guard_uniform_wet"] = {
+        label = "Wet Guard Uniform",
+        weight = 100,
+        stack = true,
+        close = true,
+        description = "A Wet Guard Uniform",
+        client = {
+            image = "guard_uniform_wet.png"
+        }
+    },
+    ["guard_uniform_dirty"] = {
+        label = "Dirty Guard Uniform",
+        weight = 100,
+        stack = true,
+        close = true,
+        description = "A Dirty Guard Uniform",
+        client = {
+            image = "guard_uniform_dirty.png"
+        }
+    },
+    ["laundry_detergent"] = {
+        label = "Laundry Detergent",
+        weight = 100,
+        stack = true,
+        close = true,
+        description = "Laundry Detergent",
+        client = {
+            image = "laundry_detergent.png"
+        }
+    },
+    ["pickaxe"] = {
+        label = "Pickaxe",
+        weight = 100,
+        stack = true,
+        close = true,
+        description = "A Pickaxe",
+        client = {
+            image = "pickaxe.png"
+        }
+    },
+    ["rock"] = {
+        label = "Rock",
+        weight = 100,
+        stack = true,
+        close = true,
+        description = "A Rock",
+        client = {
+            image = "rock.png"
+        }
+    },
+    ["recyclable_material"] = {
+        label = "Recyclable Material",
+        weight = 100,
+        stack = true,
+        close = true,
+        description = "Recyclable Material",
+        client = {
+            image = "recyclable_material.png"
+        }
+    },
+    ["recyclable_material_block"] = {
+        label = "Recyclable Material Block",
+        weight = 100,   
+        stack = true,
+        close = true,
+        description = "Recyclable Material Block",
+        client = {
+            image = "recyclable_material_block.png"
+        }
+    },
+
+    ["bagged_lunch"] = {
+        label = "Bagged Lunch",
+        weight = 1,
+        stack = true,
+        close = true,
+        description = "A Simple Bagged Lunch",
+        client = {
+            image = "bagged_lunch.png"
+        }
+    },
+
+	["sim_card"] = {
+		label = "Sim Card",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
 }

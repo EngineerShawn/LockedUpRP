@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"></link>
+    <title>Brutal Reports</title>
+</head>
+
+
+<body>
+
+    <section class="section-main">
+        <div class="main-container" id="main-container">
+            <button class="exit" onclick="Close()"><i class="fa-solid fa-xmark"></i></button>
+            <h1>Categories</h1>
+            <div class="category-container">
+                <button class="category" id="report" onclick="category(id)"><i class="fa-solid fa-bullhorn"></i></button>
+                <button class="category" id="question" onclick="category(id)"><i class="fa-solid fa-question"></i></button>
+                <button class="category" id="bug" onclick="category(id)"><i class="fa-solid fa-bug"></i></button>
+            </div>
+            <h2>Title</h2>
+            <div class="title-container">
+                <input class="title" id="title" type="text" placeholder="The main reason..">
+            </div>
+            <h2>Description</h2>
+            <div class="description-container">
+                <textarea class="description" id="description" placeholder="A few details about your problem.."></textarea>
+            </div>
+            <button class="sure" id="send_report" onclick="send(id)">Report <i class="fa-solid fa-paper-plane"></i></button>
+            <button class="sure" id="close" onclick="task(id)">Close Report</button>
+        </div>
+        <div class="chat-container" id="chat-container">
+            <h1>Chat</h1>
+            <div class="messages-container" id="messages-container"></div>
+            <div class="message-container">
+                <textarea class="message" id="message_1" placeholder="Send a chat..."></textarea>
+                <button class="sure" id="send_message" onclick="send(id)">Send <i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-admin">
+        <div class="main-container" id="main-container">
+            <button class="exit" onclick="Close()"><i class="fa-solid fa-xmark"></i></button>
+            <div class="head-container">
+                <table>
+                    <tr>
+                      <th class="id">#id</th>
+                      <th>Player Name</th>
+                      <th class="cat">Category</th>
+                      <th>Admin</th>
+                      <th class="action">Action</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="reports-container"></div>
+        </div>
+        <div class="second-container">
+            <div class="report-container">
+                <button class="back" id="back" onclick="back()"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="back close" id="close" onclick="task(id)"><i class="fa-solid fa-xmark"></i></button>
+                <h2 id="id"></h2>
+                <h1 id="player"></h1>
+                <h1 id="category"></h1>
+                <h1 id="title"></h1>
+                <h1>DESCRIPTION:</h1>
+                <textarea class="des" id="des" readonly></textarea>
+                <div class="button-container">
+                    <button class="tasks" id="goto" onclick="task(id)">GO TO <i class="fa-solid fa-person-running"></i></button>
+                    <button class="tasks" id="bring" onclick="task(id)">BRING <i class="fa-solid fa-person-arrow-down-to-line"></i></button>
+                    <button class="tasks" id="revive" onclick="task(id)">REVIVE <i class="fa-solid fa-hand-holding-medical"></i></button> 
+                    <button class="tasks" id="freeze" onclick="task(id)">FREEZE <i class="fa-solid fa-snowflake"></i></button>
+                </div>
+
+            </div>
+            <div class="chat-container" id="chat-container">
+                <h1>Chat</h1>
+                <div class="messages-container" id="messages-container_2"></div>
+                <div class="message-container">
+                    <textarea class="message" id="message_2" placeholder="Send a chat..."></textarea>
+                    <button class="sure" id="send_message" onclick="send(id)">Send <i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <div class="surebuy">
+        <div class="buy-container">
+            <h1>Are you sure to close this report?</h1>
+            <button class="tasks" id="yes" onclick="task(id)">YES</button>
+            <button class="tasks" id="cancel" onclick="task(id)">CANCEL</button>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>

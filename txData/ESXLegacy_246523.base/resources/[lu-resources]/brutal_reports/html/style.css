@@ -1,0 +1,599 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+body{
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    user-select: none;
+    overflow: hidden;
+}
+
+.section-main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: fit-content;
+    height: auto;
+    opacity: 0;
+    display: none;
+    will-change: opacity, display;
+    transition: all 0.4s ease-in-out;          
+}
+
+.exit{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-size: 33px;
+}
+
+textarea{  
+    font-family: "Oswald", sans-serif;
+}
+
+input{  
+    font-family: "Oswald", sans-serif;
+}
+
+button{
+    user-select: none;
+    transition: 0.2s;
+    background-color: transparent;
+}
+
+button:focus{
+    outline: none; 
+}
+
+button:hover{
+    filter: brightness(80%);
+}
+
+button:active{
+    transition: 0.1s;
+    filter: brightness(100%);
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.section-main .main-container{
+    width: 450px;
+    height: 650px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    overflow: hidden;
+    color: white;
+    transition: all 0.4s ease-in-out;          
+}
+
+.section-main .main-container h1{
+    margin-top: 15px;
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.section-main .main-container h2{
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 15px;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.section-main .main-container .category-container{
+    position: relative;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%,0%);
+    height: fit-content;
+    width: 80%;
+    display: flex;     
+    flex-direction: row;           
+    flex-wrap: nowrap;            
+    justify-content: space-between;
+}
+
+.section-main .main-container .category{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.section-main .main-container .title-container{
+    position: relative;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%,0%);
+    height: fit-content;
+    width: 80%;
+}
+
+.section-main .main-container .title-container .title{
+    height: 60px;
+    width: 100%;
+    background-color: rgb(50, 50, 56);
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+    border: none;
+    z-index: 2;
+    outline: none;
+    overflow-wrap: break-word;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-main .main-container .title-container .title::placeholder{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.section-main .main-container .description-container{
+    position: relative;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%,0%);
+    height: fit-content;
+    width: 80%;
+}
+
+.section-main .main-container .description-container .description{
+    height: 160px;
+    width: 100%;
+    background-color: rgb(50, 50, 56);
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    transition: 0.4s ease;
+    z-index: 2;
+    outline: none;
+    overflow-wrap: break-word;
+    text-align: center;
+    margin-bottom: 30px;
+    resize: none;
+}
+
+.section-main .main-container .description-container .description::placeholder{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.section-main .main-container #close{
+    float: left;
+    margin-left: 10%;
+    margin-right: 0%;
+    display: none;
+    background-color: rgb(189, 44, 44);
+}
+
+.section-main .main-container .sure:hover{
+    scale: 1.1;
+}
+
+.section-main .main-container .sure:hover{
+    scale: 1.1;
+}
+
+.sure{
+    position: relative;
+    float: right;
+    margin-right: 10%;
+    height: 60px;
+    width: auto;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(32, 123, 214);
+    font-size: 20px;
+    color: white;
+}
+
+.chat-container{
+    width: 450px;
+    height: 650px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    overflow: hidden;
+    color: white;
+    margin-left: 20px;
+    display: none;
+    text-align: center;
+}
+
+.chat-container h1{
+    margin-top: 15px;
+    margin-bottom: -20px;
+    font-size: 35px;
+}
+
+.chat-container .messages-container{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0%);
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 77%;
+    width: 90%;
+    overflow: scroll;
+}
+
+.chat-container .messages-container .message-element{
+    position: relative;
+    height: auto;
+    min-height: 50px;
+    max-width: 80%;
+    min-width: 30%;
+    background-color: rgb(50, 50, 56);
+    margin: 10px 10px;
+    padding-bottom: 3px;
+    border-radius: 10px;
+    overflow-wrap: break-word;
+}
+
+.chat-container .messages-container .message-element h1{
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: -15px;
+    margin-top: 0px;
+    opacity: 0.6;
+}
+
+.chat-container .messages-container .message-element h2{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.chat-container .messages-container #player{
+    float: right;
+    margin-left: 100px;
+}
+
+.chat-container .messages-container #admin{
+    float: left;
+    margin-right: 100px;
+    text-align: left;
+}
+
+.chat-container .messages-container #player h1{
+    text-align: right;
+}
+
+.chat-container .messages-container #player h2{
+    text-align: right;
+}
+
+.chat-container .message-container{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0%);
+    height: 50px;
+    width: 450px;
+    margin-top: -10px;
+}
+
+.chat-container .message-container .message{
+    width: 74%;
+    height: 95%;
+    float: left;
+    margin-left: 10px;
+    background-color: rgb(50, 50, 56);
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    overflow-wrap: break-word;
+    text-align: center;
+    resize: none;
+}
+
+.chat-container .message-container .message::placeholder{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.chat-container .message-container .sure{
+    margin-right: 10px;
+    height: 50px;
+}
+  
+.section-admin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: fit-content;
+    height: auto;
+    opacity: 0;
+    display: none;
+    will-change: opacity, display;
+    transition: all 0.4s ease-in-out;  
+}
+
+.section-admin .main-container{
+    width: 1000px;
+    height: 650px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    overflow: hidden;
+    color: white;
+    transition: all 0.4s ease-in-out;          
+}
+
+.section-admin .main-container .head-container{
+    position: relative;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%,0%);
+    height: 70px;
+    width: 90%;
+    border-bottom: solid 2px gray;
+}
+
+.section-admin .main-container .head-container table{
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.section-admin .main-container .head-container table th{
+    text-align: center;
+    font-size: 20px;
+}
+
+.section-admin .main-container .reports-container{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0%);
+    height: 85%;
+    width: 90%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-align: center;
+    font-size: 35px;
+    scroll-behavior: smooth;
+}
+
+.section-admin .main-container .reports-container .report-element{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0%);
+    width: 100%;
+    height: 65px;
+    margin-top: 12px;
+    border-radius: 10px;
+    background-color: rgb(50, 50, 56);
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.section-admin .main-container .reports-container .report-element table{
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+}
+
+.section-admin .main-container .reports-container .report-element table th{
+    text-align: center;
+}
+
+table .id{
+    width: 7%;
+}
+
+table .cat{
+    width: 10%;
+    font-size: 35px;
+}
+
+table .action{
+    width: 14%;
+}
+
+.section-admin .main-container .reports-container .report-element .sure{
+    height: 80%;
+    width: 50px;
+    margin-right: 10px;
+    margin-left: 0px;
+    font-size: 30px;
+}
+
+.section-admin .main-container .reports-container .report-element .close{
+   background-color: rgb(168, 45, 45);
+}
+
+.section-admin .second-container{
+    opacity: 0;
+    display: none;
+    will-change: opacity, display;
+    transition: all 0.4s ease-in-out;      
+}
+
+.section-admin .second-container .report-container{
+    width: 450px;
+    height: 650px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    overflow: hidden;
+    color: white;
+    transition: all 0.4s ease-in-out;          
+}
+
+.section-admin .second-container .report-container .copy{
+    font-size: 20px;
+    color: rgb(32, 123, 214);
+}
+
+.section-admin .second-container .report-container .back{
+    position: relative;
+    top: 10px;
+    left: 30px;
+    height: 50px;
+    width: 50px;
+    border-radius: 15px;
+    background-color: rgb(32, 123, 214);
+    color: white;
+    font-size: 28px;
+    margin-bottom: 35px;
+}
+
+.section-admin .second-container .report-container .close{
+    background-color: rgb(168, 45, 45);
+    margin-left: 5px;
+}
+
+.section-admin .second-container .report-container h1{
+    position: relative;
+    left: 30px;
+    margin-top: -15px;
+    color: white;
+    font-size: 28px;
+    white-space: nowrap;
+}
+
+.section-admin .second-container .report-container h2{
+    position: relative;
+    float: right;
+    margin-top: 10px;
+    margin-right: 30px;
+    color: white;
+    font-size: 28px;
+}
+
+.section-admin .second-container .report-container a{
+    color: rgb(32, 123, 214);
+}
+
+.section-admin .second-container .report-container .des{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0%);
+    height: 160px;
+    width: 80%;
+    background-color: rgb(50, 50, 56);
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    transition: 0.4s ease;
+    z-index: 2;
+    outline: none;
+    overflow-wrap: break-word;
+    text-align: center;
+    margin-bottom: 30px;
+    resize: none;
+}
+
+.section-admin .second-container .report-container .button-container{
+    position: relative;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%,0%);
+    width: 90%;
+    height: auto;
+    display: block;
+    text-align: center;
+}
+
+.tasks{
+    height: 60px;
+    width: 150px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(32, 123, 214, 0.897);
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    transition: all 0.3s;
+}
+
+.section-admin .second-container .tasks i{
+    font-size: 30px;
+}
+
+.section-admin .second-container .tasks:hover{
+    background-color: rgba(32, 123, 214, 0.706);
+}
+
+.surebuy{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.532);
+    transition: 0.4s;
+    display: none;
+    opacity: 0;
+    z-index: 5;
+}
+
+.surebuy .buy-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 250px;
+    width: 500px;
+    background-color: rgb(50, 50, 56);
+    border-radius: 20px;
+}
+
+.surebuy .buy-container h1{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    height: 50%;
+    width: 100%;
+    transform: translate(-50%, 0%);
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.surebuy .buy-container #yes{
+    position: absolute;
+    height: 70px;
+    width: 150px;
+    bottom: 20px;
+    right: 12%;
+    background-color: rgb(32, 123, 214);
+    font-size: 30px;
+    padding-top: 5px;
+}
+
+.surebuy .buy-container #cancel{
+    position: absolute;
+    height: 70px;
+    width: 150px;
+    bottom: 20px;
+    left: 12%;
+    font-size: 30px;
+    background-color: rgb(168, 45, 45);
+}
+
+.surebuy .buy-container i{
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
