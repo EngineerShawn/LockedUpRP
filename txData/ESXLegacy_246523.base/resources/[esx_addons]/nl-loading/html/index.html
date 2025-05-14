@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FiveM Loading</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+  <div id="loading-screen">
+    <img id="background-image" src="https://i.postimg.cc/d1Jt6nDm/412020-screenshots-20220204155107-1.png" alt="Background"/>
+    <div id="halftone-overlay"></div>
+    <div id="brush-top-right" class="red-brush"></div>
+    <div id="brush-bottom-left" class="red-brush"></div>
+
+    <h1 id="title"><span>NoLimits</span><span></span></h1>
+    <div id="subtitle">Appuie sur <strong>ESPACE</strong> pour couper la musique</div>
+
+    <div class="loading-bar-container">
+        <div class="loading-bar-fill" id="progressBarFill"></div>
+        <div class="loading-bar-text" id="progressBarText"></div>
+      </div>
+      <div class="statusMusic">
+        <audio id="statusAudio" src="music.mp3" hidden loop preload="auto" muted></audio>
+      </div>
+      
+      
+      
+            
+    <div id="footer-text">
+      <span class="dot">·</span>
+      <span>NoLimts - Dev</span>
+      <span class="dot">·</span>
+      <span>Loading...</span>
+    </div>
+  </div>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js" defer></script>
+  </body>
+</html>

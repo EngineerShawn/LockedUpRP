@@ -25,8 +25,8 @@ sets tags "default, esx, esx legacy, official, roleplay"
 # You may edit the following:
 
 sv_licenseKey "cfxk_1hccEtetsT5rWCWOZi3J9_30o034"
-sv_hostname "Locked Up RP | ESX Legacy Server"
-sets sv_projectName " Locked Up RP | [ESX Legacy]"
+sv_hostname "Locked Up RP"
+sets sv_projectName " Locked Up RP "
 sets sv_projectDesc "The official recipe of the most popular FiveM RP framework, containing Jobs, Housing, Vehicles & more!"
 set mysql_connection_string "mysql://root:lockeduproot@localhost/LockedUp-DB?charset=utf8mb4"
 load_server_icon esxLogo.png
@@ -65,19 +65,27 @@ sv_filterRequestControl 2
 # -----------------------------------------------------------
 ## Uncomment to set your own locale,
 ## if not, it will use the language you have selected in txAdmin.
-#setr esx:locale "en"
+setr esx:locale "en"
+setr illenium-appearance:local "en"
 
 # Default & Standalone Resources
 # ------------------------------
 ensure chat
+ensure spawnmanager
 ensure hardcap
 ensure oxmysql
 
 # ESX Legacy Core
 # ----------
+ensure ox_lib
 ensure [core]
+ensure illenium-appearance
 
 # ESX Addons
 # ----------
+ensure [ox]
 ensure [standalone]
 ensure [esx_addons]
+ensure [lu-resources]
+ensure ox_doorlock
+ensure [EUP]
