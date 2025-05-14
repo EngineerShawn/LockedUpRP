@@ -1,0 +1,22 @@
+[
+  {
+    "name": "DrFiveO",
+    "master": true,
+    "password_hash": "$2a$11$GEsL1VTU0yBOlfCNQDep3Ob/Um.2DiTwq9ANfGuf6EzEB9RQ9UBbi",
+    "providers": {
+      "citizenfx": {
+        "id": "DrFiveO",
+        "identifier": "fivem:2048235",
+        "data": {
+          "sub": "bbd2646f5a27718b15bdcedd75f4f96c",
+          "nameid": "https://forum.cfx.re/internal/user/2048235",
+          "name": "DrFiveO",
+          "picture": "https://forum.cfx.re/user_avatar/forum.cfx.re/drfiveo/256/3507117_2.png",
+          "profile": "https://forum.cfx.re/u/DrFiveO"
+        }
+      }
+    },
+    "permissions": [],
+    "$schema": 1
+  }
+]
