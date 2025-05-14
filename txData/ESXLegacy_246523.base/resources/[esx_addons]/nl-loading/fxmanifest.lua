@@ -8,7 +8,7 @@ version '1.2.0'
 files {
   'assets/**',
   'html/*',
-  'music.mp3'
+  'html/music.mp3'
 
 }
 

@@ -12,11 +12,11 @@ ui_page 'html/index.html'
 files {
     'html/*',
     'html/index.html',
-    'html/styles.css',
-    'html/responsive.css',
+    'html/style.css',
+    -- 'html/responsive.css',
     'html/app.js',
     'html/images/*.png',
-    'html/sounds/*.mp3',
+    -- 'html/sounds/*.mp3',
     'html/font/*.otf'
 }
 

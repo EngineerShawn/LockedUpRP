@@ -1,0 +1,25 @@
+!!!Это не реплейс!!!
+
+Это DLS оружие, и добавлять его нужно соответсвенно.
+
+Основное что вам нужно сделать это добавить его в конфиругациооный файл вашего фреймворка. 
+
+В QBcore это = [qb] -> qb-core -> shared -> Items.lua, weapons.lua.
+Так же прописать в qb-weapons.
+
+После того как вы сделаете всё правлеьно, вы сможете выдать себе этот придмет с помощью админ меню.
+
+Имя оружия: weapon_beanbag
+
+!!!This is not a replica!!!
+
+This is a DLS weapon, and you need to add it accordingly.
+
+The main thing you need to do is to add it to the config file of your framework. 
+
+In QBcore this = [qb] -> qb-core -> shared -> Items.lua, weapons.lua.
+Also spell it the same way in qb-weapons.
+
+Once you have done everything correctly, you can give yourself this item using the admin menu.
+
+Weapon name: weapon_beanbag

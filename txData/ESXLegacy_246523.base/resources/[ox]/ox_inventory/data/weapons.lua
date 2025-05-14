@@ -1,5 +1,15 @@
 return {
 	Weapons = {
+		['WEAPON_PEPPERSPRAY'] = {
+			label = 'Pepper Spray',
+			weight = 500,
+		},
+		['WEAPON_ANTIDOTE'] = {
+			label = 'Antidote',
+			weight = 500,
+		},
+
+
 		['WEAPON_BATTLERIFLE'] = {
 			label = 'Battle Rifle',
 			weight = 3300,

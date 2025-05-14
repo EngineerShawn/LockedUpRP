@@ -77,6 +77,8 @@ Config.Weapons = {
     { name = "WEAPON_WRENCH", label = TranslateCap("weapon_wrench"), components = {} },
     { name = "WEAPON_POOLCUE", label = TranslateCap("weapon_poolcue"), components = {} },
     { name = "WEAPON_STONE_HATCHET", label = TranslateCap("weapon_stone_hatchet"), components = {} },
+    { name = "WEAPON_PEPPERSPRAY", label = "Pepper Spray" , components = {} }, -- For Pepperspray
+    { name = "WEAPON_ANTIDOTE", label = "Antidote", components = {} }, -- For Antidote
     {
         name = "WEAPON_SWITCHBLADE",
         label = TranslateCap("weapon_switchblade"),

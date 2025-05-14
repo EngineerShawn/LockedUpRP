@@ -26,3 +26,23 @@
 [05:02:04][DrFiveO] Refreshed resources
 [05:02:08][DrFiveO] Ensured resource "ja_doc_eup"
 [05:02:43][DrFiveO] Refreshed resources
+[05:24:42][DrFiveO] [DrFiveO] executed "RESTART SERVER"
+[05:50:45][DrFiveO] [DrFiveO] executed "RESTART SERVER"
+[06:11:53][DrFiveO] [DrFiveO] executed "RESTART SERVER"
+[06:22:29][DrFiveO] [DrFiveO] executed "RESTART SERVER"
+[07:13:39][DrFiveO] [DrFiveO] executed "RESTART SERVER"
+[07:23:12][DrFiveO] [DrFiveO] executed "RESTART SERVER"
+[07:24:21][DrFiveO] Ensured resource "ox_inventory"
+[08:08:56][DrFiveO] [DrFiveO] executed "RESTART SERVER"
+[08:10:46][DrFiveO] [DrFiveO] executed "RESTART SERVER"
+[08:11:52][DrFiveO] Refreshed resources
+[08:11:53][DrFiveO] Refreshed resources
+[15:33:47][DrFiveO] [DrFiveO] executed "RESTART SERVER"
+[15:39:00][DrFiveO] Refreshed resources
+[15:39:02][DrFiveO] Refreshed resources
+[15:39:18][DrFiveO] Ensured resource "ox_doorlock"
+[15:39:29][DrFiveO] [DrFiveO] executed "RESTART SERVER"
+[15:51:08][DrFiveO] [DrFiveO] executed "RESTART SERVER"
+[15:54:48][DrFiveO] [DrFiveO] executed "RESTART SERVER"
+[15:55:54][DrFiveO] [DrFiveO] executed "RESTART SERVER"
+[15:57:13][DrFiveO] [DrFiveO] executed "RESTART SERVER"
